@@ -1,0 +1,66 @@
+{
+  "rawInput": "提取test_cases.json中的8个测试用例，依次进行Playwright测试，生成HTML报告",
+  "mode": "full",
+  "target": "TC-0001,TC-0007,TC-0010,TC-0024,TC-0025,TC-0038,TC-0041,TC-0008",
+  "targetType": "scenario",
+  "timestamp": "2026-05-07T00:00:00.000Z",
+  "sessionId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "selectedTestCases": [
+    {
+      "case_id": "TC-0001",
+      "title": "用户登录信息展示_正向",
+      "module_name": "首页视图-首页",
+      "priority": "high",
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage"
+    },
+    {
+      "case_id": "TC-0007",
+      "title": "自审计入口",
+      "module_name": "首页视图-首页",
+      "priority": "medium",
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage"
+    },
+    {
+      "case_id": "TC-0010",
+      "title": "切换至应用资源登录Tab_正向",
+      "module_name": "首页视图-首页",
+      "priority": "high",
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage"
+    },
+    {
+      "case_id": "TC-0024",
+      "title": "主帐号活跃情况统计",
+      "module_name": "首页视图-首页",
+      "priority": "medium",
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage"
+    },
+    {
+      "case_id": "TC-0025",
+      "title": "搜索应用",
+      "module_name": "首页视图-首页",
+      "priority": "medium",
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage"
+    },
+    {
+      "case_id": "TC-0038",
+      "title": "搜索用户_正向",
+      "module_name": "用户中心-用户管理",
+      "priority": "high",
+      "url": "http://10.28.149.50:9432/iam/v1/#/user/userManage"
+    },
+    {
+      "case_id": "TC-0041",
+      "title": "新增用户帐号_正向",
+      "module_name": "用户中心-用户管理",
+      "priority": "high",
+      "url": "http://10.28.149.50:9432/iam/v1/#/user/userManage"
+    },
+    {
+      "case_id": "TC-0008",
+      "title": "公告列表展示",
+      "module_name": "首页视图-首页",
+      "priority": "low",
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage"
+    }
+  ]
+}

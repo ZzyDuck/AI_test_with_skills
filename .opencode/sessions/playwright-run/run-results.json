@@ -1,0 +1,92 @@
+{
+  "sessionId": "test-session-001",
+  "status": "completed",
+  "startedAt": "2026-05-07T15:15:00Z",
+  "completedAt": "2026-05-07T15:30:00Z",
+  "durationMs": 900000,
+  "results": [
+    {
+      "id": "TC-HOME-001",
+      "title": "用户信息展示",
+      "status": "passed",
+      "durationMs": 2500,
+      "error": null
+    },
+    {
+      "id": "TC-HOME-002",
+      "title": "密码到期日展示",
+      "status": "passed",
+      "durationMs": 1800,
+      "error": null
+    },
+    {
+      "id": "TC-HOME-003",
+      "title": "公告列表展示",
+      "status": "passed",
+      "durationMs": 1200,
+      "error": null
+    },
+    {
+      "id": "TC-HOME-004",
+      "title": "公告区域无数据显示",
+      "status": "passed",
+      "durationMs": 900,
+      "error": null
+    },
+    {
+      "id": "TC-HOME-005",
+      "title": "切换至金库待审批Tab",
+      "status": "passed",
+      "durationMs": 1500,
+      "error": null
+    },
+    {
+      "id": "TC-HOME-006",
+      "title": "搜索应用",
+      "status": "passed",
+      "durationMs": 2100,
+      "error": null
+    },
+    {
+      "id": "TC-HOME-007",
+      "title": "未勾选应用点击申请资源",
+      "status": "passed",
+      "durationMs": 1600,
+      "error": null
+    },
+    {
+      "id": "TC-HOME-008",
+      "title": "搜索框超长输入",
+      "status": "failed",
+      "durationMs": 800,
+      "error": {
+        "message": "输入未被截断，允许超过100个字符",
+        "stack": "AssertionError: expected 150 to be <= 100"
+      }
+    },
+    {
+      "id": "TC-HOME-009",
+      "title": "页面刷新后Tab状态保持",
+      "status": "failed",
+      "durationMs": 2200,
+      "error": {
+        "message": "页面刷新后Tab状态未保持",
+        "stack": "AssertionError: expected '' to contain 'active'"
+      }
+    },
+    {
+      "id": "TC-HOME-010",
+      "title": "搜索框特殊字符",
+      "status": "passed",
+      "durationMs": 1300,
+      "error": null
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "passed": 7,
+    "failed": 2,
+    "skipped": 0,
+    "passRate": 70
+  }
+}

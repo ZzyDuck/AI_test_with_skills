@@ -1,0 +1,185 @@
+[
+  {
+    "id": "TC-HOME-001",
+    "title": "用户信息展示",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页"
+      ],
+      "expected_result": "页面正确显示当前用户名称、角色及今日登录次数",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  },
+  {
+    "id": "TC-HOME-002",
+    "title": "密码到期日展示",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页"
+      ],
+      "expected_result": "正确显示密码到期日期，格式为 YYYY-MM-DD",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  },
+  {
+    "id": "TC-HOME-003",
+    "title": "公告列表展示",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 查看公告区域"
+      ],
+      "expected_result": "正确显示系统公告列表",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  },
+  {
+    "id": "TC-HOME-004",
+    "title": "公告区域无数据显示",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 查看公告区域"
+      ],
+      "expected_result": "显示暂无数据或类似友好提示",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  },
+  {
+    "id": "TC-HOME-005",
+    "title": "切换至金库待审批Tab",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 点击金库待审批Tab"
+      ],
+      "expected_result": "Tab切换成功，显示金库待审批任务列表",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  },
+  {
+    "id": "TC-HOME-006",
+    "title": "搜索应用",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 在搜索框输入应用名称",
+        "3. 点击搜索"
+      ],
+      "expected_result": "列表筛选显示匹配的应用资源",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  },
+  {
+    "id": "TC-HOME-007",
+    "title": "未勾选应用点击申请资源",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 不勾选任何应用",
+        "3. 点击申请资源按钮"
+      ],
+      "expected_result": "提示请先选择应用",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  },
+  {
+    "id": "TC-HOME-008",
+    "title": "搜索框超长输入",
+    "module": "首页视图",
+    "status": "FAIL",
+    "message": "验证失败",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 在搜索框输入超过100个字符",
+        "3. 验证输入行为"
+      ],
+      "expected_result": "输入被截断或提示超出长度限制",
+      "actual_result": "",
+      "expected_failure": true
+    }
+  },
+  {
+    "id": "TC-HOME-009",
+    "title": "页面刷新后Tab状态保持",
+    "module": "首页视图",
+    "status": "FAIL",
+    "message": "验证失败",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 切换到金库待审批Tab",
+        "3. 刷新页面"
+      ],
+      "expected_result": "保持金库待审批Tab选中",
+      "actual_result": "",
+      "expected_failure": true
+    }
+  },
+  {
+    "id": "TC-HOME-010",
+    "title": "搜索框特殊字符",
+    "module": "首页视图",
+    "status": "PASS",
+    "message": "验证通过",
+    "details": {
+      "url": "http://10.28.149.50:9432/iam/v1/#/home/homeManage",
+      "executed_at": "",
+      "steps": [
+        "1. 进入首页",
+        "2. 在搜索框输入特殊字符 @#$%^&*()",
+        "3. 点击搜索"
+      ],
+      "expected_result": "不报错，返回空结果或过滤特殊字符",
+      "actual_result": "",
+      "expected_failure": false
+    }
+  }
+]

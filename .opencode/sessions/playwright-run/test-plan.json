@@ -1,0 +1,152 @@
+{
+  "sessionId": "test-session-001",
+  "target": "首页视图",
+  "targetType": "module",
+  "preconditions": {
+    "description": "用户已登录系统，进入首页",
+    "apiHelpers": [],
+    "setupSteps": [
+      "1. 导航到登录页面: http://10.28.149.50:9432/login/v1/#/login",
+      "2. 输入用户名和密码",
+      "3. 点击登录按钮",
+      "4. 等待页面跳转到首页: http://10.28.149.50:9432/iam/v1/#/home/homeManage"
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "TC-HOME-001",
+      "title": "用户信息展示",
+      "category": "首页视图",
+      "priority": "high",
+      "steps": [
+        "1. 进入首页",
+        "2. 验证页面显示当前用户名称",
+        "3. 验证页面显示当前用户角色",
+        "4. 验证页面显示今日登录次数"
+      ],
+      "expectedResult": "页面正确显示当前用户名称、角色及今日登录次数",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-002",
+      "title": "密码到期日展示",
+      "category": "首页视图",
+      "priority": "high",
+      "steps": [
+        "1. 进入首页",
+        "2. 查找密码到期日期显示区域",
+        "3. 验证日期格式为 YYYY-MM-DD"
+      ],
+      "expectedResult": "正确显示密码到期日期，格式为 YYYY-MM-DD",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-003",
+      "title": "公告列表展示",
+      "category": "首页视图",
+      "priority": "medium",
+      "steps": [
+        "1. 进入首页",
+        "2. 查看公告区域",
+        "3. 验证公告列表正确显示"
+      ],
+      "expectedResult": "正确显示系统公告列表",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-004",
+      "title": "公告区域无数据显示",
+      "category": "首页视图",
+      "priority": "medium",
+      "steps": [
+        "1. 进入首页",
+        "2. 查看公告区域",
+        "3. 验证无数据提示显示"
+      ],
+      "expectedResult": "显示暂无数据或类似友好提示",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-005",
+      "title": "切换至金库待审批Tab",
+      "category": "首页视图",
+      "priority": "high",
+      "steps": [
+        "1. 进入首页",
+        "2. 点击金库待审批Tab",
+        "3. 验证Tab切换成功"
+      ],
+      "expectedResult": "Tab切换成功，显示金库待审批任务列表",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-006",
+      "title": "搜索应用",
+      "category": "首页视图",
+      "priority": "high",
+      "steps": [
+        "1. 进入首页",
+        "2. 在搜索框输入应用名称",
+        "3. 点击搜索按钮或按回车键",
+        "4. 验证搜索结果"
+      ],
+      "expectedResult": "列表筛选显示匹配的应用资源",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-007",
+      "title": "未勾选应用点击申请资源",
+      "category": "首页视图",
+      "priority": "medium",
+      "steps": [
+        "1. 进入首页",
+        "2. 不勾选任何应用",
+        "3. 点击申请资源按钮",
+        "4. 验证提示信息"
+      ],
+      "expectedResult": "提示请先选择应用",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-008",
+      "title": "搜索框超长输入",
+      "category": "首页视图",
+      "priority": "low",
+      "steps": [
+        "1. 进入首页",
+        "2. 在搜索框输入超过100个字符",
+        "3. 验证输入行为"
+      ],
+      "expectedResult": "输入被截断或提示超出长度限制",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-009",
+      "title": "页面刷新后Tab状态保持",
+      "category": "首页视图",
+      "priority": "medium",
+      "steps": [
+        "1. 进入首页",
+        "2. 切换到金库待审批Tab",
+        "3. 刷新页面",
+        "4. 验证Tab状态"
+      ],
+      "expectedResult": "保持金库待审批Tab选中",
+      "testFile": "module-home.spec.ts"
+    },
+    {
+      "id": "TC-HOME-010",
+      "title": "搜索框特殊字符",
+      "category": "首页视图",
+      "priority": "medium",
+      "steps": [
+        "1. 进入首页",
+        "2. 在搜索框输入特殊字符 @#$%^&*()",
+        "3. 点击搜索",
+        "4. 验证搜索行为"
+      ],
+      "expectedResult": "不报错，返回空结果或过滤特殊字符",
+      "testFile": "module-home.spec.ts"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "sessionId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "mode": "full",
+  "status": "in_progress",
+  "phase": "setup",
+  "startedAt": "2026-05-07T00:00:00.000Z",
+  "servers": {
+    "backendWasStarted": false,
+    "frontendWasStarted": false
+  },
+  "metrics": {
+    "testsPlanned": 8,
+    "testsGenerated": 0,
+    "testsPassed": 0,
+    "testsFailed": 0,
+    "testsFixed": 0,
+    "healingAttempts": 0
+  }
+}
