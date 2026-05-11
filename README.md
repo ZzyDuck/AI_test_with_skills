@@ -25,24 +25,8 @@
 └── playwright.config.ts # Playwright配置
 
 
-## 快速开始
-
-```bash
-# 安装依赖
-pip install -r requirements.txt
-npm install
-npx playwright install
-
-# 运行测试
-npx playwright test
-
-# 功能点提取
-python main.py
-测试覆盖模块
-首页视图 | 用户中心 | 认证中心 | 访问控制 | 应用资源
-
 工作流程
 规划 → 生成 → 执行 → 修复 → 报告
 
 作者
-张子怡 (ZzyDuck)
+ZzyDuck
