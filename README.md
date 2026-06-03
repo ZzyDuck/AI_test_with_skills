@@ -16,8 +16,10 @@ AI驱动的自动化测试项目设计。
 - **test-case-design**
 
 ## 使用方法：
+和trae直接对话，推荐用GLM-5.1
+.env中进行url、用户名、密码、飞书资源等等配置
 
-- **1、用menu-crawler生成菜单目录，输出为文件menu_tree.json**
-- **2、根据menu_tree.json，调用function-analyzer分析功能点，生成function_analysis.json**
-- **3、根据function_analysis.json，调用test-case-design生成对应测试用例（test-case-design内）**
-- **4、根据测试用例调用test-case-design，生成对应代码和报告**
+- **1、用menu-crawler skill生成菜单目录，输出为文件menu_tree.json**
+- **2、根据menu_tree.json，调用function-analyzer skill分析功能点，生成function_analysis.json（飞书表格）**
+- **3、根据function_analysis.json，调用test-case-design skill生成对应测试用例（test-case-design内，飞书表格）**
+- **4、根据测试用例调用test-case-design skill，生成对应代码和报告**
