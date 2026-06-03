@@ -1,6 +1,6 @@
 # AI_test_with_skills
 
-> AI驱动的自动化测试项目，专为亚信科技统一身份认证与访问管理系统（IAM）设计。
+AI驱动的自动化测试项目设计。
 
 ## 核心功能
 
@@ -9,11 +9,15 @@
 - **AI集成**：基于GLM 5.1大模型，实现智能测试用例生成
 
 
-## 项目结构
-├── .trae/skills/ # 技能模块（4个Skill）
-├── playwright-tests/ # 测试代码
-├── playwright-output/ # 测试输出
-├── playwright-report/ # 测试报告
-├── main.py # 功能点提取
-├── feishu_service.py # 飞书集成
-└── playwright.config.ts # Playwright配置
+## 4个核心skill：
+- **function-analyzer**
+- **menu-crawler**
+- **playwright-test**
+- **test-case-design**
+
+## 使用方法：
+
+1、用menu-crawler生成菜单目录，输出为文件menu_tree.json
+2、根据menu_tree.json，调用function-analyzer分析功能点，生成function_analysis.json
+3、根据function_analysis.json，调用test-case-design生成对应测试用例（test-case-design内）
+4、根据测试用例调用test-case-design，生成对应代码和报告
