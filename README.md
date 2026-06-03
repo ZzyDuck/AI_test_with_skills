@@ -8,12 +8,6 @@
 - **功能点提取**：爬取网站功能点，支持导出到飞书
 - **AI集成**：基于GLM 5.1大模型，实现智能测试用例生成
 
-## 技术栈
-
-- 测试框架：Playwright + TypeScript
-- AI模型：GLM 5.1
-- 后端：Java（端口9432）
-- 工具脚本：Python
 
 ## 项目结构
 ├── .trae/skills/ # 技能模块（4个Skill）
@@ -23,10 +17,3 @@
 ├── main.py # 功能点提取
 ├── feishu_service.py # 飞书集成
 └── playwright.config.ts # Playwright配置
-
-
-工作流程
-规划 → 生成 → 执行 → 修复 → 报告
-
-作者
-ZzyDuck
